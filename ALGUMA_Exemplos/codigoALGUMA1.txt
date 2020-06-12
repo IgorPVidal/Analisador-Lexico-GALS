@@ -1,0 +1,21 @@
+% Sequencia de Fibonacci ate N
+:DECLARACOES
+argumento:INTEIRO
+soma:INTEIRO
+anterior:INTEIRO
+atual:INTEIRO
+proximo:INTEIRO
+:ALGORITMO 
+LER argumento
+ATRIBUIR 0 A soma
+ATRIBUIR 0 A anterior
+ATRIBUIR 1 A atual
+ENQUANTO argumento >= 2
+INICIO
+ATRIBUIR anterior+atual A proximo
+ATRIBUIR atual A anterior
+ATRIBUIR soma+atual A soma
+ATRIBUIR proximo A atual
+ATRIBUIR argumento-1 A argumento
+FIM
+IMPRIMIR soma

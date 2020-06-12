@@ -1,0 +1,33 @@
+Definicoes Regulares:
+digito : [0-9]
+letra: [A-Za-z]
+COMMENT : "%" [^\n "*" ]*
+ws : [\n\s\r\t]
+
+Tokens:
+ : {ws}
+ : {COMMENT}
+numI : {digito}+
+OpArit : (\*|/|\+|\-)
+OpRel : (<|<=|>=|>|=|<>)
+OpBool : (E|OU)
+DEC : DECLARACOES
+ALG : ALGORITMO
+INT : INTEIRO
+REA : REAL
+ATR : ATRIBUIR
+A : A
+LER : LER
+IMP : IMPRIMIR
+SE : SE
+ENT : ENTAO
+ENQ : ENQUANTO
+INI : INICIO
+FIM : FIM
+Delim : :
+AP : \(
+FP : \)
+Var : {letra}({letra}|{digito})*
+NumR : {digito},{digito}
+NumI : {digito}
+Str : \"({letra}|{digito}|{ws})*\" 
